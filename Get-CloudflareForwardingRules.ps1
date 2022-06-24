@@ -28,7 +28,7 @@
 
 # Check there are enough script arguments to continue
 if($args.Length -ne 3){
-    Write-Error "Not eoungh arguments to run the script"
+    Write-Error "Incorrect number of arguments to run the script"
     Exit
 }
 
