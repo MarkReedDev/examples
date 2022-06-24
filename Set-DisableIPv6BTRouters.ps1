@@ -30,9 +30,9 @@ ForEach($connection in $connections){
     # NOTE. The command is NOT case sensitive
     If($connection.Name -like "*BTHub*"){ 
 
-        # The main identifier in Windows is the interface identifier (Ethernet 1, wi-fi, etc)  
-        # This is the 'interface alias' property in the connection properties 
-        # We use that property from the connection information to disable IPv6 
+        # The main connection identifier in Windows is the interface identifier (Ethernet 1, wi-fi, etc)  
+        # The 'name' is the 'interface alias' property in the interface identifier properties 
+        # We use that property from the interface identifier information to disable IPv6 
         Disable-NetAdapterBinding -Name $connection.InterfaceAlias -ComponentID ms_tcpip6 
 
     } 
