@@ -6,7 +6,7 @@
     A problem has been identified where the VPN connection does not function
     correctly with IPv6 enabled on the network interface of a laptop and a BT 
     router is being used. This script is used in SCCM to identify these laptops
-    so IPV6 can be disabled on that network connection.
+    so IPv6 can be disabled on that network connection.
 
     .INPUTS
     None. You cannot pipe objects to Get-BTRoutersIPv6Enabled.ps1
