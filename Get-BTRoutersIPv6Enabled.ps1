@@ -12,7 +12,7 @@
     None. You cannot pipe objects to Get-BTRoutersIPv6Enabled.ps1
 
     .OUTPUTS
-    None.
+    1 BTHub detected and IPv6 enabled, 0 BTHub detected and IPv6 disabled.
 
     .EXAMPLE
     Get-BTRoutersIPv6Enabled.ps1 (The script is to be used in SCCM detection.)
