@@ -26,7 +26,7 @@ $connections = Get-NetConnectionProfile
 # Iterate through connected network connections 
 ForEach($connection in $connections){ 
 
-    # Find those connections with the 'name' BTHub - the 'name' is not used as the main identifier in Windows 
+    # Find those connections with the 'name' BTHub - the 'name' is *NOT* used as the main identifier in Windows 
     # NOTE. The command is NOT case sensitive
     If($connection.Name -like "*BTHub*"){ 
 
