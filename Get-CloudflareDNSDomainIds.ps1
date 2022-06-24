@@ -3,8 +3,8 @@
     Retrieves Cloudflare id and status property for each domain.
 
     .DESCRIPTION
-    Connects to the the Cloudflare API and exports the domain name, id and status. The id
-    can then be used in other API calls.
+    Connects to the the Cloudflare API and displays the domain name, id and status in a table
+    on the command line. The id can then be used in other API calls.
 
     .PARAMETER APIToken
     Specifies the API token to connect to Cloudflare.
@@ -44,7 +44,6 @@ $Zones = $Response | Select-Object -expand result
 
 # Reset the variable required for the iteration of the $Zones object
 $Output = @()
-
 
 # For each zone extract the details, create a $ZoneData custom object and add to the $Output array
 ForEach($Zone in $Zones){
