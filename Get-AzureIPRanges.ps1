@@ -69,7 +69,7 @@ if($StatusCode -ne 200){
 # Create an archive folder for the IP data for yesterday
 New-item -ItemType Directory -Path $archivePath
 
-# Download the new range
+# Download the new ranges
 $NewAzureRanges = Invoke-WebRequest -Uri $url | ConvertFrom-Json
 
 # Store the lastest values to file for archive
