@@ -10,7 +10,7 @@
     authorisation is required.
     
     .INPUTS
-    None. You cannot pipe objects to Get-AzureIPRangesJSON.ps1
+    None. You cannot pipe objects to Get-AzureIPRanges.ps1
     
     .OUTPUTS
     Creates a directory with text files for each geographical region and 
